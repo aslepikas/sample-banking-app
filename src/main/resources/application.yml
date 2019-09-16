@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:sample;DB_CLOSE_DELAY=-1
+    usename: SA
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+        default_chema: sample
+logging:
+  level:
+    org.hibernate: DEBUG
